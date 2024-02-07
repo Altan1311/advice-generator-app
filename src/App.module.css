@@ -28,6 +28,8 @@
 }
 
 .divider{
+  background: url("../public/images/pattern-divider-mobile.svg") center no-repeat;
+  height: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -58,9 +60,17 @@
   width: 22px;
 }
 
+.attribution{
+  font-size: 0.6rem;
+  text-align: center;
+}
+
 @media (min-width: 600px){
   .wrapper{
     width: 500px;
-    margin-bottom: 60px;
+  }
+
+  .divider{
+    background: url("../public/images/pattern-divider-desktop.svg") center no-repeat;
   }
 }
