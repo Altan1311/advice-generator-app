@@ -21,7 +21,6 @@ function App() {
       const res = await fetch(`https://api.adviceslip.com/advice/${adviceId}`)
       const json = await res.json()
 
-      console.log(json)
       setCurrentAdvice(json.slip)
     }catch(err){
       console.log(err)
